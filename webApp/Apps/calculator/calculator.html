@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>計算機</title>
+    <script src="calculator.js"></script>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+
+  <body>
+    <h1>計算機</h1>
+    <p>数値を入力してください</p>
+
+    <div class="inputs">
+      <!-- 入力1 -->
+      <div class="input1">
+        <input id="input1" type="number" value="" />
+      </div>
+
+      <!-- 演算子 -->
+      <div class="operator">
+        <select id="operator" name="operator">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
+        </select>
+      </div>
+
+      <!-- 入力2 -->
+      <div class="input2">
+        <input id="input2" type="number" value="" />
+      </div>
+    </div>
+
+    <div class="buttons">
+      <!-- 計算ボタン -->
+      <div class="button" id="calculate-button">
+        <button onclick="calculate()">計算</button>
+      </div>
+
+      <!-- クリアボタン -->
+      <div class="button" id="clear-button">
+        <button onclick="clearInputs()">クリア</button>
+      </div>
+    </div>
+
+    <!-- 結果表示 -->
+    <div class="result">
+      <p>
+        結果: <span id="result-value"><!-- ここに結果を表示 --></span>
+      </p>
+    </div>
+
+    <div class="footer">
+      <p><a href="../../index.html">戻る</a></p>
+    </div>
+  </body>
+</html>
